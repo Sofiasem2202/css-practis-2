@@ -1,6 +1,7 @@
-p {
-    background: rgba(red, green, blue, alpha);
-}
-.card > p {
-    color: rgb(red, green, blue);
-}
+html {
+    max-width: 720px;
+  }
+  
+  body {
+    background: #fff;
+  }
