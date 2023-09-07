@@ -11,23 +11,18 @@
                 </nav>
                     </header>
 
-                    
+
+        
         <main class="main">
-            {{#with messages}}
-        <div class="messages" >
-            <h1 class="messages_title">{{title}}</h1>
+            {{#with info}}
+            <h2 class="info_title">{{title}}</h2>
+            <p class="info_description">{{description}}</p>
 
-    {{#each list}}
-    <div class="msg">
-        <strong class="msg_name">{{name}}</strong>
-        <p class="msg_text">{{message}}</p>
-        <span class="msg_day">{{day}}</span>
-    </div>
-    {{/each}}
-    <a href="#" class="messages_link">All messages</a>
+            {{/with}}
 
-        </div>
-        {{/with}}
+        
+
+       
         {{#with form}}
         <form class="form">
             <h2 class="form_title">{{title}}</h2>
@@ -50,14 +45,37 @@
         {{/with}}
         </main>
         
-        <div class="advantages">
-            {{#each advantages}}
-            <div class="advan">
-                <strong>{{title}}</strong>
-                <p>{{text}}</p>
+
+        {{#with updates}}
+        <div class="updates">
+            <div class="description_title">{{title}}</div>
+            </div>
+            
+
+            {{#each list}}
+            <div class="updates_list">
+                <strong>{{nickname}}</strong>
+                <p>{{description}}</p>
             </div>
             {{/each}}
-            </div>
+
+            {{#with show_all}}
+           <a href="{{url}}" class="list_link">{{text}}</a>
+            {{/with}}
+            {{/with}}
+
+            {{#with expirience}}
+            <strong class="expirience_title">{{title}}</strong>
+            <div class="badge">{{badge}}</div>
+
+            {{#each list}}
+            <div class="name">{{name}}</div>
+            <p class="details">{{details}}</p>
+            {{/each}}
+
+            {{/with}}
+
+            </main>
 
 
     <footer class="footer">
