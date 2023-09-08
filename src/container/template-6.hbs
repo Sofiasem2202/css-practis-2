@@ -14,10 +14,12 @@
 
         
         <main class="main">
+            
             {{#with info}}
+            <div class="row">
             <h2 class="info_title">{{title}}</h2>
             <p class="info_description">{{description}}</p>
-
+               </div>
             {{/with}}
 
         
@@ -53,9 +55,11 @@
             
 
             {{#each list}}
+            <div class="my-3">
             <div class="updates_list">
                 <strong>{{nickname}}</strong>
                 <p>{{description}}</p>
+            </div>
             </div>
             {{/each}}
 
@@ -64,22 +68,37 @@
             {{/with}}
             {{/with}}
 
-            {{#with expirience}}
-            <strong class="expirience_title">{{title}}</strong>
-            <div class="badge">{{badge}}</div>
 
-            {{#each list}}
-            <div class="name">{{name}}</div>
-            <p class="details">{{details}}</p>
+
+            {{#with expirience}}
+             <div class="card_exp">
+            <strong class="expirience_title">{{title}}</strong>
+          
+            
+             </div>
+
+              <div class="list">
+               <div  class="expir_badge">{{badge}}</div>
+                
+
+                {{#each list}}
+            
+            <div class="list_card ">
+            <div class="list_name">{{name}}</div>
+            <p class="list_details">{{details}}</p>
+            </div>
+            
+             
             {{/each}}
+            </div>
 
             {{/with}}
 
-            </main>
+           
 
 
-    <footer class="footer">
-           <div>
+                 <footer class="footer">
+                     <div>
                     {{>logo}}
                     <span class="footer_copyright">Copyright 2023-2024</span>
                 </div>

@@ -224,20 +224,105 @@ gap: var(--space-l);
 }
 
 
+
 .description_title {
   color: var(--color-title);
   
   font-size: var(--space-b);
   
   font-weight: 400;
-  line-height: 19.2px; 
+  line-height: 19.2px;
+  display: flex;
+padding-bottom: 0px;
+align-items: flex-start;
+gap: 10px;
+align-self: stretch; 
 }
 .updates_list {
-  display: flex;
-width: 1000px;
-padding: 24px;
-flex-direction: column;
-align-items: flex-start;
-gap: 24px;
+  color: #6C757D;
+  
+  font-size: var(--size-d);
+  
+  font-weight: 400;
+  line-height: 100%
 }
+
+.expirience_title{
+  color: #212529;
+  
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 120%; 
+  
+
+}
+
+.expir_badge {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+
+  transform: rotate(30deg);
+
+  padding: var(--space-m) var(--space-l);
+  gap: var(--space-m);
+  border-radius: 20px;
+  background-color: #ff7347;
+  color: var(--color-white);
+  
+  font-size: 24px;
+  font-weight: 700;
+  
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  
+  padding: 24px 28px;
+  
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+
+}
+
+.list_card {
+  display: flex;
+  padding: 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  flex: 1 0 0;
+ border-radius: 12px;
+ background: #212529;
+}
+
+.list_name {
+  color:var(--color-white);
+
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 26px;
+}
+
+.list_details {
+  display: flex;
+
+  color: #B1B1B1;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; 
+
+ 
+  }
+
+
+
 
