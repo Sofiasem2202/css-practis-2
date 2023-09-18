@@ -1,0 +1,24 @@
+@font-face {
+    font-family:'HelveticaNeueBold';
+    src: url('/font/HelveticaNeueBold/ttf');
+}
+body {
+font-family: 'HelveticaNeueBold', sans-serif;
+background-color: var(--color-white);
+}
+:root {
+    --color-white:#FFFFFF;
+
+    --page-widht-big:1260px;
+    --page-widht-medium:1000px;
+    --page-widht-small:700px
+}
+.page {
+    display: flex;
+    justify-content: center;
+}
+.page_content {
+    width: 100%;
+    max-width:var(--page-widht);
+}
+@media all and
