@@ -316,7 +316,7 @@ body {
 }
 
 @layer mod {
-  .page--dashboard {
+  .page--dashboar {
     display: grid;
     grid-template-columns: 280px 1fr;
     grid-template-rows: min-content 1fr;
@@ -441,7 +441,7 @@ body {
 
 @layer adaptive {
   @media all and (width <= 1000px) {
-    .page--dashboard {
+    .page--dashboar {
       grid-template-columns: 1fr;
     }
 
